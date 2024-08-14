@@ -1,13 +1,13 @@
 Summary:	TPM2 module for OpenSSL
 Summary(pl.UTF-8):	Moduł TPM2 dla OpenSSL-a
 Name:		openssl-module-tpm2
-Version:	1.1.1
+Version:	1.2.0
 Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/tpm2-software/tpm2-openssl/releases
 Source0:	https://github.com/tpm2-software/tpm2-openssl/releases/download/%{version}/tpm2-openssl-%{version}.tar.gz
-# Source0-md5:	150b3f519011199ebc807d77bad94137
+# Source0-md5:	ef3548186c501d14e3b1cd1caf95a0de
 URL:		https://github.com/tpm2-software/tpm2-openssl
 # for tests
 #BuildRequires:	cmocka-devel >= 1.0
@@ -17,7 +17,8 @@ BuildRequires:	pandoc
 BuildRequires:	pkgconfig >= 1:0.25
 BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.673
-BuildRequires:	tpm2-tss-devel >= 3.0.0
+BuildRequires:	tpm2-tss-devel >= 3.2.0
+Requires:	tpm2-tss >= 3.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		modulesdir	%(pkg-config --variable=modulesdir libcrypto)
