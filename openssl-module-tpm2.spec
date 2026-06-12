@@ -1,13 +1,13 @@
 Summary:	TPM2 module for OpenSSL
 Summary(pl.UTF-8):	Moduł TPM2 dla OpenSSL-a
 Name:		openssl-module-tpm2
-Version:	1.2.0
+Version:	1.3.0
 Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/tpm2-software/tpm2-openssl/releases
 Source0:	https://github.com/tpm2-software/tpm2-openssl/releases/download/%{version}/tpm2-openssl-%{version}.tar.gz
-# Source0-md5:	ef3548186c501d14e3b1cd1caf95a0de
+# Source0-md5:	7a4fa4fbabdeb93cf5fb3bc978912c33
 URL:		https://github.com/tpm2-software/tpm2-openssl
 # for tests
 #BuildRequires:	cmocka-devel >= 1.0
